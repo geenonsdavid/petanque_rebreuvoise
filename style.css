@@ -15,8 +15,7 @@ header{
 }
 
 h1{
-    text-align: center;
-    margin: 0px;    
+   margin: 0px;    
 }
 
 .navbar{
@@ -29,6 +28,8 @@ h1{
 
 .navlist{
     display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
     gap: 8px;
 }
 
@@ -55,18 +56,18 @@ nav{
 }
 
 .navtext{
-    display: none;
+    display: flex;
 }
 .welcome_image{
-    width: 300px;
-    height: 257px;
+    display: flex;
+    max-width: 100%;
     border-radius: 15px;
     align-self: center;
 
 }
 
 main{
-    padding: 15px 10px 0px;
+    padding: 15px;
     gap: 10px;
     
 }
@@ -81,4 +82,27 @@ main{
 
 p{
     text-align: justify;
+    margin: 0px;
 }
+
+footer{
+    background: #DFDED8;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px; 
+}
+
+.list_social_icons{
+    display: flex;
+    width: 360px;
+    justify-content:center;
+    gap: 60px;
+}
+
+.social_icon{
+    width: 25px;
+    height: 25px;
+}
+
