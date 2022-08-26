@@ -57,9 +57,12 @@ nav{
 .navtext{
     display: none;
 }
-.image{
+.welcome_image{
     width: 300px;
     height: 257px;
+    border-radius: 15px;
+    align-self: center;
+
 }
 
 main{
@@ -69,4 +72,13 @@ main{
 }
 .welcome_section{
     text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 10px;    
+    
+}
+
+p{
+    text-align: justify;
 }
