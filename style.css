@@ -1,21 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
-body{
-    font-family: 'Henny Penny', cursive;; 
-    margin: 0px;
+html,body{
+    
+    font-family: 'Henny Penny', cursive;
+    margin: 0;
+    padding: 0;
     background: #ECEAEA;
+    
+    
+
+   
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 8px 8px;
+    padding: 0px 1rem 1rem;
     background: #DFDED8;
 }
 
 h1{
-   margin: 0px;    
+   margin: 0;    
+}
+
+p{
+    padding: 0.5rem;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .navbar{
@@ -29,9 +42,9 @@ h1{
 .navlist{
     display: flex;
     align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-    gap: 8px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    gap: 1rem;
 }
 
 .logo{
@@ -57,8 +70,9 @@ nav{
 .icons_active{
     width: 40px;
     height: 40px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
-   border: 3px solid #D3B701;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      
+    border: 3px solid #D3B701;
       
 }
 
@@ -66,57 +80,45 @@ nav{
     display: flex;
     align-items:center;
 }
-@media screen and  (max-width:562px) {
-    .navtext{
-        display: none;
-    }
-    h1{
-        display:none;
-    }
-    @media screen and (max-width:310px) {
-        .logo{
-            display: none;
-        }
-        
-    }
-}
-
-
-.welcome_image{
-    display: flex;
-    max-width: 100%;
-    border-radius: 15px;
-    align-self: center;
-
-}
 
 main{
     display:flex;
     flex-direction: column;
-    padding: 15px; 
-    gap: 10px;   
+    padding: 1rem; 
+    gap: 1rem;   
     
 }
 .welcome_section{
+    display: flex;
     text-align: center;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 15px;
-    padding: 10px;    
-    
+        
+ }
+ img{
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    border-radius: 10px;
 }
 
-p{
-    margin: 0;
+.welcome_image{
+    display: flex;
+    flex:1;
+    margin: auto;
+    padding: 0.5rem;    
+}
+.text{
+    flex:1;
 }
 
 footer{
     background: #DFDED8;
-    
     display: flex;
     justify-content: center;
-    padding-top: 8px;
-    padding-bottom: 8px; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
 }
 
 .list_social_icons{
@@ -132,17 +134,19 @@ footer{
 }
 .card_event{
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     width: 344px;
     background: #FFFFFF;
     border: 2px solid #F8E99B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    border-radius: 10px;
     
 }
 .logo_date{
     width: 99px;
     height: 99px;
+    padding: auto;
+    margin: auto;
     flex: none;
     background-image: url(./src/logo.png);
 }
@@ -153,10 +157,60 @@ h2{
 
 .event{
     text-align: center;
-    
-    
 }
 
-.day,.year{
+.day,.month,.year{
+    font-weight: bold;
     text-align: center;
 }
+.day{
+    font-size: 23px;
+}
+
+
+@media screen and (max-width:900px) {
+    .welcome_section{
+        display: block;
+    } 
+    
+ }
+
+@media screen and  (max-width:630px) {
+    .navtext,h1{
+        display: none;        
+    }
+   
+    main{
+       align-items: center;       
+    }
+    .card_event{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width:390px) {
+        .logo{
+            display: none;
+            
+        }
+        .card_event{
+            display: block;
+            width: auto;            
+        }
+        .logo_date{
+            gap:8px;
+            background: lightgrey;
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            height: auto;
+            width: auto;
+            justify-content: center;
+            font-size:large;
+            font-weight: bold;
+            
+        }
+        .welcome_image{
+            display:none;
+        }
+       
+    }
