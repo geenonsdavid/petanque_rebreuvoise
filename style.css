@@ -221,5 +221,8 @@ h2{
     .list_social_icons{
         display: block;
         text-align: center;
+    }
+    .logo_date{
+        display:block;
     }  
 }
