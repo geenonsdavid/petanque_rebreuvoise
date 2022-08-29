@@ -81,8 +81,8 @@ nav{
 }
 
 main{
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     padding: 1rem; 
     gap: 1rem;   
     
