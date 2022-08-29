@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
-html,body{
-    
+body{
+    height: 100vh;
+    justify-content: space-between;
     font-family: 'Henny Penny', cursive;
     margin: 0;
     padding: 0;
     background: #ECEAEA;
     
-    
-
-   
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 1rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem;
     background: #DFDED8;
 }
 
@@ -36,15 +34,15 @@ p{
     align-items: center;  
     margin: 0;
     padding: 0;
-    width:100%;
+    
 }
 
 .navlist{
     display: flex;
     align-items: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    gap: 1rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    gap: 0.8rem;
 }
 
 .logo{
@@ -53,6 +51,7 @@ p{
 }
 
 nav{
+    
     display: flex;
     width: 100%;
     padding: 0px;
@@ -188,29 +187,39 @@ h2{
     }
     
 }
-@media screen and (max-width:390px) {
-        .logo{
-            display: none;
-            
-        }
-        .card_event{
-            display: block;
-            width: auto;            
-        }
-        .logo_date{
-            gap:8px;
-            background: lightgrey;
-            border-radius: 10px 10px 0px 0px;
-            display: flex;
-            height: auto;
-            width: auto;
-            justify-content: center;
-            font-size:large;
-            font-weight: bold;
-            
-        }
-        .welcome_image{
-            display:none;
-        }
-       
+
+@media screen and (max-width:359px) {
+    .logo{
+        display: none;            
     }
+    .card_event{
+        display: block;
+        width: auto;            
+    }
+    .logo_date{
+        gap:8px;
+        background: lightgrey;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        font-size:large;
+        font-weight: bold;
+    }
+    
+}
+@media screen and (max-width:279px) {
+    nav{
+        display: block;
+    }
+   
+    .welcome_image{
+        display: none;
+    }
+    
+    .list_social_icons{
+        display: block;
+        text-align: center;
+    }  
+}
