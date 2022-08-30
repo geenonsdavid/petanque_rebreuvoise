@@ -29,6 +29,14 @@ p{
     text-align: justify;
 }
 
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+a:hover{
+    color: #D3B701;
+}
+
 .navbar{
     display: flex;
     align-items: center;  
@@ -40,9 +48,9 @@ p{
 .navlist{
     display: flex;
     align-items: center;
-    padding-right: 0.8rem;
-    padding-left: 0.8rem;
-    gap: 0.8rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    gap: 0.6rem;
 }
 
 .logo{
