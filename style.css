@@ -35,7 +35,9 @@ a{
 }
 a:hover{
     color: #D3B701;
+    text-shadow: #FC0 1px 0 10px;
 }
+
 
 .navbar{
     display: flex;
