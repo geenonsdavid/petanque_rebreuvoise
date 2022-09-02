@@ -7,11 +7,6 @@
     list-style: none;
 }
 
-.wallpaper{
-   background-image: url(./src/boule-2351201_1920.jpg);
-   
-}
-
 body {
     display: flex;
     height: 100vh;
@@ -20,7 +15,17 @@ body {
     font-family: 'Henny Penny', cursive;
 }
 
-
+body::before{
+    content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-image: url(./src/boule-2351201_1920.jpg);
+            background-size: cover;
+            opacity: 0.4;
+}
 
 .logo_PR {
     position: absolute;
@@ -180,6 +185,7 @@ footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     gap: 0.3rem;
+    
 }
 
 .list_social_icons {
@@ -293,6 +299,7 @@ footer {
     main{
         margin-bottom: 0;
     }
+
 }
 
 @media screen and (max-width:318px) {
