@@ -17,14 +17,14 @@ body {
 
 body::before{
     content: "";
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background-image: url(./src/boule-2351201_1920.jpg);
-            background-size: cover;
-            opacity: 0.4;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(./src/boule-2351201_1920.jpg);
+    background-size:cover;
+    opacity: 0.4;
 }
 
 .logo_PR {
@@ -102,7 +102,6 @@ main {
     position: relative;
     display: flex;
     align-items: flex-start;
-    height: auto;
     margin-top: 115px;
     margin-bottom: 60px;
     flex-wrap: wrap;
