@@ -23,7 +23,7 @@ body::before{
     bottom: 0px;
     left: 0px;
     background-image: url(./src/boule-2351201_1920.jpg);
-    background-size:cover;
+    object-fit:cover;
     opacity: 0.4;
 }
 
@@ -101,7 +101,7 @@ nav ul li span {
 main {
     position: relative;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 115px;
     margin-bottom: 60px;
     flex-wrap: wrap;
@@ -202,30 +202,39 @@ footer {
     display: flex;
     gap: 0.5rem;
     width: 344px;
+    height: auto;
     background: #FFFFFF;
     border: 2px solid #F8E99B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    margin: auto;
 }
 
 .logo_date {
-    width: 99px;
-    height: 99px;
-    padding: auto;
-    margin: auto;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
     flex: none;
     background-image: url(./src/logo.png);
+    background-size: cover;
 }
 
 .day,
 .month,
 .year {
+    font-size: 0.5em;
     font-weight: bold;
     text-align: center;
 }
 
 .day {
     font-size: 23px;
+}
+
+.event{
+    height: auto;
+
 }
 
 @media screen and (max-width:900px) {
@@ -246,14 +255,11 @@ footer {
     }
     main{
         margin-bottom: 60px;
+        align-items: center;
     }
 
     .navtext {
         display: none;
-    }
-
-    main {
-        align-items: center;
     }
 
     .card_event {
@@ -263,10 +269,7 @@ footer {
 
 @media screen and (max-width:530px) {
 
-    .card_event {
-        display: block;
-        width: auto;
-    }
+  
 
     nav ul li span,
     .logo_PR {
@@ -284,17 +287,7 @@ footer {
         transition: 500ms;
     }
 
-    .logo_date {
-        gap: 8px;
-        background: lightgrey;
-        border-radius: 10px 10px 0px 0px;
-        display: flex;
-        height: auto;
-        width: auto;
-        justify-content: center;
-        font-size: large;
-        font-weight: bold;
-    }
+
     main{
         margin-bottom: 0;
     }
@@ -315,6 +308,10 @@ footer {
         position: relative;
         top: 0.5rem;
     }
+    h2{
+        font-size: 1em;
+    }
+   
 }
 @media screen and (max-width:195px) {
     .list_social_icons{
