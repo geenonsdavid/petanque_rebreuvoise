@@ -166,6 +166,7 @@ img {
     flex: 1;
     margin: auto;
     padding: 0.5rem;
+    margin-top: 0;
 }
 
 .text {
