@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
+/*variable*/
 :root{
     --font-title: 'Henny Penny', cursive;
     --font-text:Arial, Helvetica, sans-serif;
+    --background-header:#DFDED8;
+    --background-footer: var(--background-header);
+    --background-section:white;
+    --wallpaper: url(./src/boule-2351201_1920.jpg);
+    --a: dark;
+    --color-a-hover:#FC0;
+    --background-a-hover:#ECEAEA;
+    --color-a-active:white;
+    --background-a-active:black;
+    --background-card: var(--background-section);
+    --border-card: var(--color-a-hover);
+
 }
 * {
     margin: 0;
@@ -26,18 +39,17 @@ body::before{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(./src/boule-2351201_1920.jpg);
+    background-image: var(--wallpaper);
     object-fit:cover;
     opacity: 0.4;
 }
 
-.logo_PR {
+.logo-site {
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
     width: 100px;
     height: 100px;
-
 }
 
 header {
@@ -46,7 +58,7 @@ header {
     top: 0;
     height: 115px;
     width: 100%;
-    background: #DFDED8;
+    background: var(--background-header);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -82,14 +94,7 @@ nav {
 }
 
 
-a {
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: 100%;
-    font-weight: bold;
-    color: #000000;
-}
+
 
 nav ul {
     display: flex;
@@ -118,46 +123,45 @@ main {
     overflow-y: auto;
 }
 
+a {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    font-weight: bold;
+    color: var(--a);
+}
+
 a:hover {
     color: dark;
-    text-shadow: 1px 1px 5px #FC0;
-}
-
-
-a:link,
-a:visited,
-a:focus {
-    background: #DFDED8;
-}
-
-a:hover {
-    background: #ECEAEA;
+    text-shadow: 1px 1px 5px var(--color-a-hover);
+    background: var(--background-a-hover);
     border-radius: 0.8rem;
 }
 
 a:active {
-    background: black;
-    color: white;
+    color: var(--color-a-active);
+    background: var(--background-a-active);
 }
 
-.icons {
+.logo {
     width: 40px;
     height: 40px;
     border: 3px solid #DFDED8;
 }
 
-.icons_active {
+.logo-active {
     width: 40px;
     height: 40px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: 3px solid #D3B701;
 }
 
-.welcome_section {
+.welcome-section {
     display: flex;
     width: 100%;
     text-align: center;
-    background: #FFFFFF;
+    background: var(--background-section);
     border: 1px solid #000000;
     border-radius: 15px;
 }
@@ -169,7 +173,7 @@ img {
     border-radius: 10px;
 }
 
-.welcome_image {
+.welcome-image {
     display: flex;
     flex: 1;
     margin: auto;
@@ -188,7 +192,7 @@ footer {
     bottom: 0;
     display: flex;
     flex-direction: column;
-    background: #DFDED8;
+    background: var(--background-footer);
     align-items: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -196,37 +200,37 @@ footer {
     
 }
 
-.list_social_icons {
+.list-social-icons {
     display: flex;
     width: 250px;
     justify-content: space-around;
 }
 
-.social_icon {
+.social-icon {
     width: 25px;
     height: 25px;
 }
 
-.card_event {
+.card-event {
     display: flex;
     gap: 0.5rem;
     width: 344px;
     height: auto;
-    background: #FFFFFF;
-    border: 2px solid #F8E99B;
+    background: var(--background-card);
+    border: 2px solid var(--border-card);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: auto;
 }
 
-.logo_date {
+.logo-date {
     width: 70px;
     height: 70px;
     padding: 0;
-    margin: 0;
+    margin: 0.3em;
     flex: none;
     background-image: url(./src/logo.png);
-    background-size: cover;
+    background-size: cover;  
 }
 
 .day,
@@ -255,7 +259,7 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    .welcome_section {
+    .welcome-section {
         display: block;
         transition: 500ms;
 
@@ -266,7 +270,7 @@ footer {
 
     header,
     main,
-    .logo_PR {
+    .logo-site {
         transform: translateY(-60px);
         transition: 500ms;
     }
@@ -279,7 +283,7 @@ footer {
         display: none;
     }
 
-    .card_event {
+    .card-event {
         width: auto;
     }
 }
@@ -289,7 +293,7 @@ footer {
   
 
     nav ul li span,
-    .logo_PR {
+    .logo-site {
         display: none;
 
     }
@@ -331,7 +335,7 @@ footer {
    
 }
 @media screen and (max-width:195px) {
-    .list_social_icons{
+    .list-social-icons{
         width: auto;
     }
 }
