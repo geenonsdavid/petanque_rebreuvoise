@@ -173,7 +173,7 @@ img {
     border-radius: 10px;
 }
 
-.welcome-image {
+.welcome-section div:first-child{
     display: flex;
     flex: 1;
     margin: auto;
@@ -181,7 +181,7 @@ img {
     margin-top: 0;
 }
 
-.text {
+.presentation {
     flex: 1;
 }
 
