@@ -107,8 +107,8 @@ nav ul li {
     width: auto;
 }
 
-nav ul li span {
-    padding-left: 0.3rem;
+nav ul li span, a {
+    padding: 0.3rem;
 }
 
 main {
@@ -132,7 +132,8 @@ a {
     color: var(--a);
 }
 
-a:hover {
+nav ul li span:hover,footer a:hover {
+    padding: 00.3em;
     color: var(--a);
     text-shadow: 1px 1px 5px var(--color-a-hover);
     background: var(--background-a-hover);
@@ -147,7 +148,7 @@ a:active {
 .logo {
     width: 40px;
     height: 40px;
-   /* border: 3px solid #DFDED8;*/
+    border: 3px solid #DFDED8;
 }
 
 .logo-active {
